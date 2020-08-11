@@ -1,0 +1,114 @@
+.publicPricingComponentContainer {
+    padding: 22px 58px 45px 58px;
+
+    > p:nth-of-type(1) {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #000000;
+        margin: 0 0 38px 0;
+    }
+
+    > div:nth-of-type(1) {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+    }
+
+    > div:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > p:nth-of-type(1) {
+            font-weight: 500;
+            font-size: 1.3rem;
+            color: #253050;
+            margin: 0 0 64px 0;
+        }
+
+        > div:nth-of-type(1) {
+            align-self: stretch;
+
+            > p {
+                margin: 0 0 26px 0;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            > p:nth-child(odd) {
+                font-weight: 500;
+                font-size: 1rem;
+                color: #000000;
+            }
+
+            > p:nth-child(even) {
+                font-weight: 500;
+                font-size: 0.8rem;
+                color: #000000;                
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .publicPricingComponentContainer {
+        padding: 15px 30px 35px 30px;
+
+        > p:nth-of-type(1) {
+            margin-bottom: 30px;
+        }
+
+        > div:nth-of-type(1) {
+            margin-bottom: 50px;
+        }
+
+        > div:nth-of-type(2) {
+            > p:nth-of-type(1) {
+                margin-bottom: 45px;
+            }
+
+            > div:nth-of-type(1) {
+                > p {
+                    margin-bottom: 20px;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        } 
+    }
+}
+
+@media(max-width: 500px) {
+    .publicPricingComponentContainer {
+        padding: 10px 15px 20px 15px;
+
+        > p:nth-of-type(1) {
+            margin-bottom: 18px;
+        }
+
+        > div:nth-of-type(1) {
+            margin-bottom: 20px;
+        }
+
+        > div:nth-of-type(2) {
+            > p:nth-of-type(1) {
+                margin-bottom: 25px;
+            }
+
+            > div:nth-of-type(1) {
+                > p {
+                    margin-bottom: 10px;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        } 
+    }
+}

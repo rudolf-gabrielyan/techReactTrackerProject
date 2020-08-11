@@ -1,0 +1,172 @@
+.termsOfServiceComponentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 180px;
+
+    > p:nth-of-type(1) {
+        color: #001f4c;
+        font-weight: 900;
+        font-size: 2.4rem;
+        margin: 0 0 60px 0;
+    }
+
+    > div {
+        align-self: stretch;
+        margin-bottom: 40px;
+
+        > p:nth-of-type(1) {
+            color: #001f4c;
+            font-weight: 900;
+            font-size: 1.2rem;
+            margin: 0 0 30px 0;
+
+            > span {                
+                color: #006fd2;
+            }
+        }
+
+        > p:not(:first-child) {
+            font-size: 0.8rem;
+            color: #899dbe;
+            margin: 0 0 30px 0;
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+
+        > ul {
+            margin: 0 0 30px 0;
+
+            > li {
+                font-size: 0.8rem;
+                color: #899dbe;
+            }
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .termsOfServiceComponentContainer {
+        padding: 40px 120px;
+
+        > p:nth-of-type(1) {
+            margin: 0 0 50px 0;
+        }
+
+        > div {
+            margin-bottom: 30px;
+
+            > p:nth-of-type(1) {
+                margin: 0 0 20px 0;
+            }
+
+            > p:not(:first-child) {
+                margin: 0 0 20px 0;
+    
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+
+            > ul {
+                margin: 0 0 20px 0;
+    
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .termsOfServiceComponentContainer {
+        padding: 30px 80px;
+
+        > p:nth-of-type(1) {
+            margin: 0 0 40px 0;
+        }
+
+        > div {
+            margin-bottom: 20px;
+
+            > p:nth-of-type(1) {
+                margin: 0 0 10px 0;
+            }
+
+            > p:not(:first-child) {
+                margin: 0 0 10px 0;
+    
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+
+            > ul {
+                padding-left: 30px;
+                margin: 0 0 10px 0;
+    
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .termsOfServiceComponentContainer {
+        padding: 15px 30px;
+
+        > p:nth-of-type(1) {
+            margin: 0 0 30px 0;
+        }
+
+        > div {
+            margin-bottom: 10px;
+
+            > p:nth-of-type(1) {
+                margin: 0 0 5px 0;
+            }
+
+            > p:not(:first-child) {
+                margin: 0 0 5px 0;
+    
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+
+            > ul {
+                padding-left: 20px;
+                margin: 0 0 5px 0;
+    
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

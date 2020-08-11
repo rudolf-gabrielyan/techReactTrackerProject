@@ -1,0 +1,100 @@
+.recentTechsComponentContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 49px 0;
+
+    > p:nth-of-type(1) {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #000000;
+        margin: 0 0 17px 0;
+    }
+
+    > p:nth-of-type(2) {
+        width: 55%;
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: center;
+        color: #6F6B6B;
+        margin: 0 0 39px 0;
+    }
+
+    > div:nth-of-type(1) {
+        align-self: stretch;
+        background-color: #F0F4FD;
+        padding: 24px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > p {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #000000;
+            margin: 0 60px 0 0;
+        }
+
+        > button {
+            background-color: #3898DE;
+            border-radius: 12px;
+            padding: 8px 22px;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition-duration: 0.4s;
+
+            &:hover {
+                background-color: #207dc1;
+            }
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .recentTechsComponentContainer {
+        padding: 25px 0;
+
+        > p:nth-of-type(1) {
+            margin-bottom: 15px;
+        }
+
+        > p:nth-of-type(2) {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        > div:nth-of-type(1) {
+            padding: 15px 5px;
+
+            > p {
+                margin-right: 40px;
+            }
+
+            > button {
+                padding: 8px 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .recentTechsComponentContainer {
+        > div:nth-of-type(1) {
+            flex-direction: column;
+
+            > p {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            > button {
+                padding: 8px 15px;
+            }
+        }
+    }
+}

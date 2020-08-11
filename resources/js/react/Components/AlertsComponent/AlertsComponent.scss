@@ -1,0 +1,109 @@
+.alertsComponentContainer {
+    position: relative;
+    
+    > p {
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: #000000;
+        padding: 16px 0 13px 52px;
+        margin: 0;
+        background-color: #F0F4FD;
+    }
+
+    > div:nth-of-type(1) {
+        display: inline-block;
+        width: 45%;
+        min-height: 1000px;
+        background: #3898DE;
+        border: 1px solid #5C5C5C;
+        box-sizing: border-box;        
+
+        > div:nth-of-type(1) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            position: relative;
+            padding: 20px 73px 20px 35px;
+
+            > span {
+                font-weight: bold;
+                color: #FFFEFE;
+            }
+
+            > span:nth-of-type(1) {
+                font-size: 1.3rem;
+            }
+
+            > span:nth-of-type(2) {
+                font-size: 0.9rem;
+                cursor: pointer;
+                transition-duration: 0.4s;
+
+                &:hover {
+                    color: #d8d2d2;
+                }
+            }
+
+            > span:nth-of-type(3) {
+                font-size: 1.3rem;
+                color: #5C5C5C;
+                position: absolute;
+                top: 32px;
+                left: calc(100% + 73px + 112px);
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .alertsComponentContainer {
+        > p:nth-of-type(1) {
+            padding-left: 30px;
+        }
+
+        > div:nth-of-type(1) {
+            > div:nth-of-type(1) {
+                padding: 20px 35px;
+
+                > span:nth-of-type(3) {
+                    left: calc(100% + 35px + 80px);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .alertsComponentContainer {  
+        > p:nth-of-type(1) {
+            padding-left: 15px;
+        }
+        
+        > div:nth-of-type(1) {      
+            > div:nth-of-type(1) {
+                padding: 20px 10px;
+
+                > span:nth-of-type(3) {
+                    font-size: 1rem;
+                    left: calc(100% + 10px + 50px);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .alertsComponentContainer {          
+        > div:nth-of-type(1) {      
+            > div:nth-of-type(1) {
+                padding: 20px 5px;
+
+                > span:nth-of-type(3) {
+                    font-size: 1rem;
+                    left: calc(100% + 10px + 50px);
+                }
+            }
+        }
+    }
+}

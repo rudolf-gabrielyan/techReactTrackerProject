@@ -1,0 +1,203 @@
+.planContainer {
+    width: 21%;
+
+    //For Account Settings
+    min-width: 216px;
+    min-height: 365px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    border: 1px solid #3898DE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px 5px 20px 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000000;
+    transition-duration: 0.4s;
+
+    &:hover {
+        color: #FFFFFF;
+        background-color: #3898DE;
+    }
+
+    > p:nth-of-type(1) {
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    > p:nth-of-type(2) {
+        font-weight: 500;
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    > p:nth-of-type(3) {
+        font-size: 0.6rem;
+        text-align: center;
+        margin: 0 0 18px 0;
+    }
+
+    > div:nth-of-type(1) {
+        margin-bottom: 40px;
+
+        > p:nth-of-type(1) {
+            font-weight: 500;
+            font-size: 2.5rem;
+            margin: 0 0 0 0;
+            display: flex;
+    
+            > span:nth-of-type(1) {
+                font-size: 1.2rem;
+                align-self: center;
+            }
+    
+            > span:nth-of-type(2) {
+                font-size: 0.8rem;
+                font-weight: 600;
+                align-self: flex-end;
+                padding-bottom: 9px;
+            }
+        }
+    }
+        
+
+    > div:nth-of-type(2) {
+        width: 80%;
+        flex-grow: 1;
+        margin-bottom: 176px;
+
+        > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #8D8D8D;
+            padding: 8px 3px;
+
+            > span {
+                font-weight: 600;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    > a {
+        background-color: #42C960;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 16px 20px;
+        transition-duration: 0.4s;
+
+        &:hover {
+            background-color: #49aa5f;
+        }
+
+        &:visited {
+            color: #FFFFFF;
+        }
+    }
+
+    > button {
+        background-color: #42C960;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 16px 20px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        outline: none;
+        border: none;
+
+        &:hover {
+            background-color: #49aa5f;
+        }
+    }
+}
+
+@media(max-width: 1100px) {
+    .planContainer {
+        width: 24%;
+
+        > div:nth-of-type(2) {
+            width: 90%;
+            margin-bottom: 120px;
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .planContainer {
+        width: 30%;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 800px) {
+    .planContainer {
+        > div:nth-of-type(1) {
+            > p:nth-of-type(1) {
+                > span:nth-of-type(2) {
+                    padding-bottom: 6px;
+                }
+            } 
+        } 
+    } 
+}
+
+@media(max-width: 700px) {
+    .planContainer {
+        width: 35%;
+
+        > div:nth-of-type(1) {
+            margin-bottom: 20px;
+        }
+
+        > div:nth-of-type(2) {
+            margin-bottom: 70px;
+        }
+
+        > a {
+            padding: 10px 15px;
+        }
+
+        > button {
+            padding: 10px 15px;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .planContainer {
+        width: 40%;
+    }
+}
+
+@media(max-width: 500px) {
+    .planContainer {
+        > div:nth-of-type(1) {
+            > p:nth-of-type(1) {
+                > span:nth-of-type(2) {
+                    padding-bottom: 4px;
+                }
+            } 
+        } 
+    } 
+}
+
+@media(max-width: 400px) {
+    .planContainer {
+        width: 45%;
+
+        //For Account Settings
+        min-width: 152px;
+    }
+}

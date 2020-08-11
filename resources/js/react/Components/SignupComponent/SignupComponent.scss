@@ -1,0 +1,401 @@
+.signupComponentContainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+    > div:nth-of-type(1) {
+        width: 50%;
+        background-image: url('../../assets/images/keyboard-typist.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        > div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(125, 31, 183, 0.8);  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;          
+
+            > div:nth-of-type(1) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 15px 35px;
+            }
+
+            > div:nth-of-type(2) {
+                padding: 0 35px;
+
+                > p {
+                    margin: 0 0 21px 0;
+                    font-size: 0.8rem;
+                    color: #FFFFFF;
+
+                    &:last-of-type {
+                        margin: 0;
+                    }
+
+                    > i {
+                        margin-right: 12px;
+                    }
+                }
+
+                > p:nth-of-type(1) {
+                    margin-bottom: 27px;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    > div:nth-of-type(2) {
+        width: calc(50% - 186px);
+        background-color: #0A2945;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 171px 93px;
+        position: relative;
+
+        > p:nth-of-type(1) {
+            margin: 0 0 38px 0;
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        > div:nth-of-type(1), div:nth-of-type(3) {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+
+            > p:nth-of-type(1) {
+                font-size: 0.7rem;
+                color: #FFFFFF;
+                margin: 0 0 5px 0;
+            }
+
+            > input {
+                outline: none;
+                padding: 15px 0 15px 7px;
+                background-color: #FFFFFF;
+                border: 1px solid #C4C4C4;
+                box-sizing: border-box;
+                border-radius: 6px;
+                font-weight: 500;
+                font-size: 0.7rem;
+                color: #929090;
+            }
+            
+            > p:nth-of-type(2) {
+                font-size: 0.6rem;
+                color: red;
+                margin: 3px 0 0 0;
+            }
+        }
+
+        > div:nth-of-type(3) {
+            margin-bottom: 27px;
+        }
+
+        > div:nth-of-type(2) {
+            display: flex;
+            justify-content: space-between;
+
+            > div {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                margin-bottom: 16px;
+
+                > p:nth-of-type(1) {
+                    font-size: 0.7rem;
+                    color: #FFFFFF;
+                    margin: 0 0 5px 0;
+                }
+
+                > input {
+                    outline: none;
+                    padding: 15px 0 15px 7px;
+                    background-color: #FFFFFF;
+                    border: 1px solid #C4C4C4;
+                    box-sizing: border-box;
+                    border-radius: 6px;
+                    font-weight: 500;
+                    font-size: 0.7rem;
+                    color: #929090;
+                }
+                
+                > p:nth-of-type(2) {
+                    font-size: 0.6rem;
+                    color: red;
+                    margin: 3px 0 0 0;
+                }
+            }
+        }
+        
+        > div:nth-of-type(4) {
+            margin-bottom: 33px;
+
+            > div {
+                display: flex;
+                align-items: center;
+
+                > p {
+                    font-size: 0.8rem;
+                    color: #FFFFFF;
+                    margin: 0 0 0 19px;
+                    display: inline-block;
+    
+                    > a {
+                        &:visited {
+                            color: #FFFFFF
+                        }
+                    }
+                }
+            }
+
+            > p {
+                color: red;
+                font-size: 0.6rem;
+                margin: 0;
+            }
+        }
+
+        > div:nth-of-type(5) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 28px;
+
+            > span {
+                width: 25%;
+                border: 1px solid #FFFFFF;
+            }
+
+            > button {
+                width: 30%;
+                height: 45px;
+                outline: none;
+                border: none;
+                background-color: #42C957;
+                border-radius: 6px;
+                font-weight: bold;
+                font-size: 1rem;
+                color: #FFFFFF;
+                cursor: pointer;
+                transition-duration: 0.4s;
+
+                &:hover {
+                    background-color: #359945;
+                }
+            }
+        }
+
+        > p:nth-of-type(2) {
+            font-size: 0.8rem;
+            color: #FFFFFF;
+            margin: 0;
+            text-align: center;
+
+            > a {
+                font-weight: bold;
+                text-decoration: none;
+
+                &:visited {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1100px) {
+    .signupComponentContainer {
+        > div:nth-of-type(2) {
+            padding: 150px 70px;
+            width: calc(50% - 140px);
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .signupComponentContainer {
+        > div:nth-of-type(2) {
+            padding: 120px 50px;
+            width: calc(50% - 100px);
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .signupComponentContainer {
+        height: auto;
+        flex-direction: column;
+
+        > div:nth-of-type(1) {
+            width: auto;
+            height: 300px;
+
+            > div {
+                > div:nth-of-type(2) {
+                    padding: 0;
+                }
+            }
+        }
+
+        > div:nth-of-type(2) {
+            width: auto;
+            height: calc(100vh - 300px);
+            padding: 70px 200px;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .signupComponentContainer {
+
+        > div:nth-of-type(1) {
+            height: 250px;
+        }
+
+        > div:nth-of-type(2) {
+            height: calc(100vh - 250px);
+            padding: 50px 150px;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .signupComponentContainer {
+
+        > div:nth-of-type(1) {
+            height: 200px;
+
+            > div {
+                > div:nth-of-type(1) {
+                    padding: 10px;
+                }
+
+                > div:nth-of-type(2) {
+                    > p {
+                        margin-bottom: 15px;
+                    }
+
+                    > p:nth-of-type(1) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        > div:nth-of-type(2) {
+            height: calc(100vh - 200px);
+            padding: 50px 120px;
+
+            > p:nth-of-type(1) {
+                margin: 0px 0 25px 0;
+            }
+
+            > div:nth-of-type(1), div:nth-of-type(3) {
+                input {
+                    padding: 10px 0 10px 5px;
+                }
+            }
+
+            > div:nth-of-type(2) {
+                > div {
+                    > input {
+                        padding: 10px 0 10px 5px;
+                    }
+                }
+            }
+
+            > div:nth-of-type(5) {
+                > button {
+                    width: 20%;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .signupComponentContainer {
+        > div:nth-of-type(1) {
+            height: 180px;
+        }
+
+        > div:nth-of-type(2) {
+            height: calc(100vh - 180px);
+
+            > p:nth-of-type(1) {
+                margin: 0px 0 20px 0;
+            }
+
+            > div:nth-of-type(3) {
+                margin-bottom: 17px;
+            }
+
+            > div:nth-of-type(4) {
+                margin-bottom: 17px;
+
+                > div {
+                    > p {
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            > div:nth-of-type(5) {
+                margin-bottom: 20px;
+
+                > button {
+                    width: 22%;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .signupComponentContainer {
+
+        > div:nth-of-type(1) {
+            > div {
+                > div:nth-of-type(2) {
+                    > p {
+                        margin-bottom: 10px;
+                    }
+
+                    > p:nth-of-type(1) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+        > div:nth-of-type(2) {
+            padding: 40px 80px;
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .signupComponentContainer {
+
+        > div:nth-of-type(2) {
+            padding: 30px 50px;
+        }
+    }
+}

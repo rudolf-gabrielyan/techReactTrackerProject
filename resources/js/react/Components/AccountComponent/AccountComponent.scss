@@ -1,0 +1,91 @@
+.accountComponentContainer {
+    > p:nth-of-type(1) {
+        margin: 0 0 32px 0;
+        padding: 16px 0 13px 52px;
+        background-color: #F0F4FD;
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: #000000;
+    }
+
+    > div:nth-of-type(1) {
+        display: flex;
+        justify-content: flex-start;
+
+        > div:nth-of-type(1) {
+            width: 16%;
+            min-height: 662px;
+            margin-left: 52px;
+            margin-right: 33px;
+            padding: 22px 5px 0 18px;
+            background-color: #3898DE;
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+
+            > a {
+                font-weight: 500;
+                font-size: 0.7rem;
+                color: #FFFFFF;
+                display: block;
+                text-decoration: none;
+                margin-bottom: 16px;
+            }
+
+            > .activeAccountLink {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .accountComponentContainer {
+        > div:nth-of-type(1) {
+            > div:nth-of-type(1) {
+                width: 17%;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .accountComponentContainer {
+        > p:nth-of-type(1) {
+            padding-left: 20px;
+        }
+
+        > div:nth-of-type(1) {
+            > div:nth-of-type(1) {
+                margin-left: 20px;
+                min-height: 500px;
+            }
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .accountComponentContainer {
+        > p:nth-of-type(1) {
+            margin-bottom: 20px;
+        }
+
+        > div:nth-of-type(1) {
+            > div:nth-of-type(1) {
+                padding-left: 10px;
+                min-height: 400px;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .accountComponentContainer {
+        > div:nth-of-type(1) {
+            > div:nth-of-type(1) {
+                width: 30%;
+                min-height: 300px;
+                margin: 0 15px 0 10px;
+            }
+        }
+    }
+}

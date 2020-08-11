@@ -1,0 +1,225 @@
+.companyTechChangesContainer {
+    padding: 0 94px;
+    margin-bottom: 103px;
+
+    > div:nth-of-type(1) {
+        background-color: #F0F4FD;
+        padding: 18px 0 20px 42px;
+
+        > p {
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #000000;
+            margin: 0;
+        }
+    }
+
+    > div:last-of-type {
+        height: 136px;
+        background-color: #3898DE;
+        border: 1px solid #5C5C5C;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > button {
+            font-weight: bold;
+            font-size: 0.7rem;
+            color: #FFFFFF;
+            background-color: #42C960;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            padding: 9px 8px;
+            border-radius: 6px;
+            transition-duration: 0.4s;
+
+            &:hover {
+                background-color: #4cb163;
+            }
+
+            > i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.verticalTimeline {
+    border: 1px solid #5C5C5C;
+    border-top: none;
+    border-bottom: none;
+    box-sizing: border-box;
+    background-color: #a0ddf875;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+    width: 100% !important;
+
+    &:before {
+        background-color: #586EBB !important;
+        margin-left: -19px !important;
+        left: 38% !important;
+    }
+
+    &:after {
+        content: none !important;
+    }
+}
+
+.verticalTimelineElement {
+    border-bottom: 1px solid #8D8D8D !important;
+    padding-bottom: 23px;
+    margin: 2em 0 !important;
+
+    &:first-child {
+        margin-top: 0 !important;
+    }
+
+    &:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    > div {
+        > span.vertical-timeline-element-icon {
+            left: 38% !important;
+        }
+
+        > div.vertical-timeline-element-content {
+            padding: 0 !important;
+            box-shadow: none !important;
+            width: 59% !important;
+
+            > div {
+                margin-bottom: 25px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                > div {
+                    padding: 0.5rem;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                    background-color: white;
+                    margin-right: 22px;
+                    position: relative;
+
+                    > img {
+                        width: 20px;
+                    }
+
+                    > span {
+                        position: absolute;
+                        right: -4px;
+                        top: -5px;
+                        color: white;
+                        font-weight: 100;
+                        font-size: 0.65rem;
+                        padding: 2px 4px;
+                        border-radius: 50%;                        
+                        text-align: center;
+                    }
+                }
+
+                > p {
+                    margin: 0;
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                    color: #000000;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            .vertical-timeline-element-date {
+                right: 115% !important;
+                font-size: 0.8rem;
+            }
+
+            > span {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 1170px) {
+    .verticalTimeline {
+        margin: 0 !important;
+        border-left: none;
+
+        &:before {
+            margin-left: -8px !important;
+            left: 18px !important;
+        }
+
+        .verticalTimelineElement {
+            > div {
+                > span.vertical-timeline-element-icon {
+                    left: 0 !important;
+                }
+
+                > div.vertical-timeline-element-content {
+                    > div {
+                        > div {
+                            > img {
+                                width: 18px;
+                            }
+
+                            > span {
+                                top: -5px;
+                            }
+                        }
+                    }
+
+                    > p {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .companyTechChangesContainer {
+        padding: 0 60px;
+    }
+}
+
+@media(max-width: 800px) {
+    .companyTechChangesContainer {
+        padding: 0 50px;
+    }
+
+    .verticalTimeline {
+        .verticalTimelineElement {
+            > div {
+                > div.vertical-timeline-element-content {
+                    > div {
+                        > div {
+                            > img {
+                                width: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .companyTechChangesContainer {
+        padding: 0 30px;
+
+        > div:last-of-type {
+            > button {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

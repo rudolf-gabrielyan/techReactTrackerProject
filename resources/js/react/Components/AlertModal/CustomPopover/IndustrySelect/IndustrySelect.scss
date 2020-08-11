@@ -1,0 +1,56 @@
+.industrySelectContainer {
+    position: relative;
+    width: 350px;
+
+    > i:nth-of-type(1) {
+        position: absolute;
+        top: -14px;
+        left: -12px;
+        font-size: 1rem;
+        cursor: pointer; 
+        color: #858585;
+    }
+
+    > div:nth-of-type(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        p {
+            color: #3898DE;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        > button {
+            background-color: #3898DE;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            color: #FFFFFF;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            width: 90px;
+            height: 35px;
+            transition-duration: 0.4s;
+
+            &:hover {
+                background-color: #1072b9,
+            };
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .industrySelectContainer {
+        width: 200px;
+
+        > div:nth-of-type(1) {
+            > button {
+                width: 60px;
+                height: 30px;
+            }
+        }
+    }
+}

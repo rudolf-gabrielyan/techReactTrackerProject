@@ -1,0 +1,42 @@
+@import '../../variables.scss';
+
+.technologiesStaticsContainer {
+    height: 710px;
+    background-color: #F5F4F4;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    > div {
+        width: 75%;
+        background-color: $main-color-third;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: absolute;
+        top: -100px;
+        padding: 32px 43px 13px 43px;
+    }
+}
+
+@media(max-width: 800px) {
+    .technologiesStaticsContainer {
+        height: 520px;
+    }
+}
+
+@media(max-width: 600px) {
+    .technologiesStaticsContainer {
+        height: 500px;
+    }
+}
+
+@media(max-width: 550px) {
+    .technologiesStaticsContainer {
+        > div {
+            width: 60%;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

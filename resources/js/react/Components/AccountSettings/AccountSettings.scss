@@ -1,0 +1,206 @@
+.accountSettingsContainer {
+    width: 50%;
+
+    > div:nth-of-type(1) {
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        padding: 16px 41px 38px 22px;
+        margin-bottom: 35px;
+
+        > p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 0.7rem;
+            color: #000000;
+            margin: 0 0 21px 0;
+        }
+
+        > div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 17px;
+
+            > span {
+                font-size: 0.7rem;
+                color: #000000;
+                width: 134px;
+            }
+
+            > input {
+                font-size: 0.7rem;
+                color: #000000;
+                font-weight: 600;
+                border: 2px solid #C4C4C4;
+                transition-duration: 0.4s;
+            }
+
+            > p {
+                font-weight: 600;
+                font-size: 0.7rem;
+                color: #000000;
+                margin: 0;
+
+                > span {
+                    color: #3898DE;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .horizontalLine {
+            border: 1px solid #8D8D8D;
+            margin: 23px 0 15px 0;
+        }
+
+        > p:nth-of-type(2) {
+            font-size: 0.7rem;
+            color: #3898DE;
+            cursor: pointer;
+        }
+    }
+
+    > div:nth-of-type(2) {
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        padding: 16px 41px 38px 22px;
+        margin-bottom: 35px;
+
+        > p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 0.7rem;
+            color: #000000;
+            margin: 0 0 21px 0;
+        }
+
+        > div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 17px;
+
+            > span {
+                font-size: 0.7rem;
+                color: #000000;
+                width: 160px;
+            }
+
+            > p {
+                font-weight: 600;
+                font-size: 0.7rem;
+                color: #000000;
+                margin: 0;
+
+                > span {
+                    color: #3898DE;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        > p:nth-of-type(2) {
+            font-size: 0.7rem;
+            color: #6D6D6D;
+            margin: 23px 0 0 0;
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .accountSettingsContainer {
+        > div:nth-of-type(2) {
+            > div {
+                > p {
+                    > span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .accountSettingsContainer {
+        > div:nth-of-type(1) {
+            padding: 16px 41px 25px 22px;
+
+            > div {
+                margin-bottom: 12px;
+            }
+        }
+
+        > div:nth-of-type(2) {
+            padding: 16px 41px 25px 22px;
+
+            > div {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .accountSettingsContainer {
+        > div:nth-of-type(1) {
+            > div {
+                > span {
+                    width: 110px;
+                }
+            }            
+        }
+
+        > div:nth-of-type(2) {
+            > div {
+                > span {
+                    width: 120px;
+                }
+            }            
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .accountSettingsContainer {
+        > div:nth-of-type(1) {
+            padding: 16px 22px 25px 22px;
+
+            > div {
+                > span {
+                    width: 90px;
+                }
+            }
+        }
+
+        > div:nth-of-type(2) {
+            padding: 16px 22px 25px 22px;
+
+            > div {
+                > span {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .accountSettingsContainer {
+        > div:nth-of-type(1) {
+            padding: 13px 13px 15px 13px;
+
+            > div {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 9px;
+            }
+        }
+
+        > div:nth-of-type(2) {
+            padding: 13px 13px 15px 13px;
+
+            > div {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 9px;
+            }
+        }
+    }
+}

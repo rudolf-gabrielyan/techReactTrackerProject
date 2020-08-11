@@ -1,0 +1,138 @@
+.techUsageContainer {
+    padding: 40px 94px 0 94px;
+
+    > div:nth-of-type(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        > p:nth-of-type(1) {
+            margin: 0 5px 0 0;
+            font-weight: 500;
+            font-size: 1.3rem;
+            color: #000000;
+        }
+
+        > p:nth-of-type(2) {
+            margin: 0;
+            font-size: 0.7rem;
+            color: #3898DE;
+            cursor: pointer;
+
+            > span {
+                color: #808080;
+            }
+        }
+
+        > button {
+            width: 137px;
+            height: 36px;
+            background-color: #3898DE;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.7rem;
+            color: #FFFFFF;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition-duration: 0.4s;
+
+            &:hover {
+                background-color: #247ebf;
+            }
+
+
+            > i {
+                margin-left: 16px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .techUsageContainer {
+        > div:nth-of-type(1) {
+            > button {
+                width: 115px;
+                height: 32px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .techUsageContainer {
+        > div:nth-of-type(1) {
+            > button {
+                width: 100px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .techUsageContainer {
+        padding: 16px 60px 40px 60px;
+
+        > div:nth-of-type(1) {
+            > button {
+                > i {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .techUsageContainer {
+        padding: 16px 50px 40px 50px;
+
+        > div:nth-of-type(1) {
+            > button {
+                width: 85px;
+                height: 28px;
+            }
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .techUsageContainer {
+        > div:nth-of-type(1) {
+            > button {
+                width: 80px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .techUsageContainer {
+        > div:nth-of-type(1) {
+            > button {
+                width: 70px;
+                height: 23px;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .techUsageContainer {
+        padding: 16px 30px 40px 30px;
+
+        > div:nth-of-type(1) {
+            > button {
+                width: 60px;
+                height: 20px;
+
+                > i {
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+}

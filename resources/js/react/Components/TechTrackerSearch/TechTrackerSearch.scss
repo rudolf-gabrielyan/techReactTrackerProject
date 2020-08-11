@@ -1,0 +1,91 @@
+@import '../../variables.scss';
+
+.techTrackerSearchContainer {
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > h1 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: $main-color-third;
+        margin: 0;
+        text-align: center;
+    }
+
+    .typistLink {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #B92B2B;
+    }
+
+    @keyframes cursor {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    .Cursor {
+        animation: cursor 1s infinite linear;
+        position: relative;
+        bottom: 5px;
+        font-size: 1.75rem;
+        color: white;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    > p:nth-of-type(1) {
+        font-size: 1rem;
+        color: #BFBFBF;
+        margin: 12px 0 0 0;
+        text-align: center;
+    }
+
+    > p:nth-of-type(2) {
+        font-size: 1rem;
+        color: #BFBFBF;
+        margin: 4px 0 30px 0;
+        text-align: center;
+    }
+
+    > p:nth-of-type(3) {
+        align-self: flex-start;
+        margin-left: 30%;
+        margin-bottom: 0;
+        font-size: 0.7rem;
+        text-decoration-line: underline;
+        color: $main-color-third;
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 900px) {
+    .techTrackerSearchContainer {     
+        .Cursor {
+            bottom: 3px;
+        }
+        
+        > p:nth-of-type(3) {
+            margin-left: 27.5%;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .techTrackerSearchContainer {
+        padding-top: 100px;       
+    }
+}
+
+@media(max-width: 450px) {
+    .techTrackerSearchContainer {        
+        > p:nth-of-type(3) {
+            margin-left: 23%;
+        }
+    }
+}

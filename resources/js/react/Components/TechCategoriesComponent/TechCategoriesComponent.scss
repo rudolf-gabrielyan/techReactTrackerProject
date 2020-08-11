@@ -1,0 +1,103 @@
+.techCategoriesComponentContainer {
+    position: relative;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 49px 73px;
+
+    > p:nth-of-type(1) {
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #000000;
+        margin: 0 0 80px 0;
+    }
+
+    > div:nth-of-type(1) {
+        align-self: stretch;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 49px;
+        grid-column-gap: 10px;
+
+        > div {
+            > p {
+                font-weight: bold;
+                font-size: 0.8rem;
+                color: #3898DE;
+                margin: 0 0 12px 0;
+                padding-left: 5px;
+
+                > a {
+                    color: #3898DE;
+                    font-weight: normal;
+                    text-decoration: none;
+
+                    &:visited {
+                        color: #3898DE;
+                    }
+                }
+    
+                > span {
+                    font-weight: normal;
+                    color: #000000;
+                }
+            }
+    
+            > p:nth-of-type(1) {
+                color: #000000;
+                margin-bottom: 15px;
+                padding-left: 0;
+            }
+
+            > p:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .techCategoriesComponentContainer {
+        padding: 35px 45px;
+
+        > div:nth-of-type(1) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .techCategoriesComponentContainer {
+        padding: 30px 25px;
+
+        > p:nth-of-type(1) {
+            margin-bottom: 35px;
+        }
+
+        > div:nth-of-type(1) {
+            grid-row-gap: 20px;
+
+            > div {
+                > p {
+                    margin: 0 0 5px 0;
+                }
+        
+                > p:nth-of-type(1) {
+                    margin-bottom: 8px;
+                }
+    
+                > p:last-of-type {
+                    margin-bottom: 0;
+                }
+            }            
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .techCategoriesComponentContainer {
+        > div:nth-of-type(1) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

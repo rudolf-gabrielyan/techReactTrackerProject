@@ -1,0 +1,62 @@
+.loggedUserCardContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    > span:nth-of-type(1) {
+        font-size: 14px;
+        color: #506F99;
+        cursor: pointer;
+        
+        > i {
+            margin-left: 4px;
+            opacity: 0.2;
+            color: #232A30;
+        }
+    }
+
+    > div:nth-of-type(2) {
+        position: absolute;
+        top: 120%;
+        right: 0;
+        background-color: #FFFFFF;
+        width: 100%;
+        min-width: 140px;
+        border: 1px solid #506F99;
+        padding: 5px 0;
+        border-radius: 10px;
+        z-index: 1;
+
+        > p {
+            font-size: 14px;
+            color: #506F99;
+            margin: 0 0 10px 0;
+            transition-duration: 0.4s;
+            padding-left: 10px;            
+
+            > a {
+                display: inline-block;
+                padding: 5px 0 5px 5px;
+                text-decoration: none;    
+                
+                &:visited {
+                    color: #506F99
+                }
+            }
+            
+            &:hover {
+                background-color: #d7d4d4;
+            }
+
+            &:last-of-type {
+                cursor: pointer;
+                padding: 5px 0 5px 10px;
+                margin-bottom: 0;
+
+                > i {
+                    margin-right: 5px;
+                }
+            }               
+        }
+    }
+}

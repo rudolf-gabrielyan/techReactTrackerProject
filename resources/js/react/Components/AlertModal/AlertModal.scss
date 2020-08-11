@@ -1,0 +1,12 @@
+.MuiMobileStepper-dot {
+    background-color: #e4e0e0 !important;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #968d8d !important;
+    }
+}
+
+.MuiMobileStepper-dotActive {   
+    background-color: #C4C4C4 !important;
+}

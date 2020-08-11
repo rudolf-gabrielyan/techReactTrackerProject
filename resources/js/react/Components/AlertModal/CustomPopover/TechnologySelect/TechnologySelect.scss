@@ -1,0 +1,56 @@
+.technologySelectContainer {
+    position: relative;
+    width: 350px;
+
+    > i:nth-of-type(1) {
+        position: absolute;
+        top: -20px;
+        left: -12px;
+        font-size: 1rem;
+        cursor: pointer; 
+        color: #858585;
+    }
+
+    p {
+        color: #3898DE;
+        font-size: 1rem;
+        margin: 10px 0 15px 0;
+    }
+
+
+    > button {
+        background-color: #3898DE;
+        border-radius: 6px;
+        font-size: 0.7rem;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 90px;
+        height: 35px;
+        transition-duration: 0.4s;
+        float: right;
+        margin-top: 15px;
+
+        &:hover {
+            background-color: #1072b9,
+        };
+    }
+}
+
+.technologyIcon {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@media(max-width: 700px) {
+    .technologySelectContainer {
+        width: 200px;
+
+        > button {
+            width: 60px;
+            height: 30px;
+        }
+    }
+}

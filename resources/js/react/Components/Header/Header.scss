@@ -1,0 +1,406 @@
+@import '../../variables.scss';
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.headerContainer {
+    background-color: $main-color;
+    padding: 12px 31px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $main-color-second;
+    
+    > div:nth-of-type(1) {
+        width: 325px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > a:nth-of-type(1) {
+            margin: 0;
+
+            > img {
+                width: 132px;
+            }
+        }
+
+        > div:nth-of-type(1) {
+            position: relative;
+
+            > p {
+                font-size: 14px;
+                color: #B1BBC4;
+                margin: 0;
+                cursor: pointer;
+            }
+
+            > ul {
+                position: absolute;
+                top: 150%;
+                left: -17%;
+                width: max-content;
+                visibility: hidden;
+                list-style: none;
+                margin: 0;
+                background-color: #FFFFFF;
+                padding: 10px 0;
+                transition-duration: 0.3s;
+                border-radius: 5px;
+                z-index: 1;
+
+                > li {
+                    padding: 0 5px 0 10px;
+                    margin-bottom: 5px;
+
+                    &:hover {
+                        background-color: #e8e8e8
+                    }
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &:hover ul {
+                visibility: visible;
+            }
+        }
+    }
+    
+    > div:nth-of-type(2) {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        > a:nth-of-type(1) {
+            width: 137px;
+            height: 36px;
+            background-color: $main-color-third;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 5px;
+            font-size: 14px;
+            color: #000000;
+            text-decoration: none;
+            cursor: pointer;
+            transition-duration: 0.4s;
+
+            &:hover {
+                background-color: #d2d1d1;
+            }
+
+            &:visited {
+                color: #000000;
+            }
+        }
+    }
+
+    .headerLink {
+        font-size: 14px;
+        text-decoration: none;
+        color: #B1BBC4;
+    }
+}
+
+.headerContainerWithAdditionalStyles {
+    background-color: $main-color-third;
+    border-bottom: 1px solid #0a294536;
+
+    > div:nth-of-type(1) {
+        width: 45%;
+        min-width: 572px;
+
+        > a:nth-of-type(1) {
+            &:visited {
+                color: $main-color;
+            }
+        }
+
+        > div:nth-of-type(1) {
+            > p {
+                color: #232A30;
+                opacity: 0.5;
+            }
+
+            > ul {
+                border: 1px solid #B1BBC4;
+            }
+        }
+    }
+
+    > div:nth-of-type(2) {
+        > a:nth-of-type(1) {
+            background-color: #3898DE;
+            color: $main-color-third;
+
+            &:hover {
+                background-color: #207dc1;
+            }
+
+            &:visited {
+                color: $main-color-third;
+            }
+        }
+    }
+
+    .headerLink {
+        color: #232A30;
+        opacity: 0.5;
+    }
+}
+
+// For small Screen Sizes
+.headerMenuContainer {
+    background-color: $main-color;
+    padding: 12px 31px;
+    border-bottom: 1px solid $main-color-second;
+
+    > div:nth-of-type(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > div:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            
+            > a:nth-of-type(1) {
+                display: flex;
+                align-items: center;
+
+                > img {
+                    width: 132px;
+                }
+
+                &:visited {
+                    color: $main-color;
+                }
+            }
+        }        
+    
+        > i {
+            color: $main-color-third;
+            font-size: 20px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+
+            &:hover {
+                color: #d2d1d1;
+            }
+        }
+    }
+
+    > div:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: inherit;
+        padding: 10px 0;
+        border-top: 1px solid $main-color-second;
+        animation: slide-up 0.6s ease;
+
+        > div:nth-of-type(1) {
+            position: relative;
+            margin-bottom: 10px;
+
+            > p {
+                font-size: 14px;
+                color: #B1BBC4;
+                margin: 0;
+                cursor: pointer;
+            }
+
+            > ul {
+                position: absolute;
+                top: 150%;
+                left: -17%;
+                width: max-content;
+                visibility: hidden;
+                list-style: none;
+                margin: 0;
+                background-color: #FFFFFF;
+                padding: 10px 0;
+                transition-duration: 0.3s;
+                border-radius: 5px;
+                z-index: 1;
+
+                > li {
+                    padding: 0 5px 0 10px;
+                    margin-bottom: 5px;
+
+                    &:hover {
+                        background-color: #e8e8e8
+                    }
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &:hover ul {
+                visibility: visible;
+            }
+        }
+
+        .headerLink {
+            font-size: 14px;
+            text-decoration: none;
+            color: #B1BBC4;
+            margin-bottom: 10px;
+        }
+
+        > .headerSignUpLink {
+            width: 100px;
+            height: 30px;
+            background-color: $main-color-third;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition-duration: 0.4s;
+    
+            &:hover {
+                background-color: #d2d1d1;
+            }
+    
+            &:visited {
+                color: #000000;
+            }
+        }
+    }
+}
+
+.headerMenuContainerWithAdditionalStyles {
+    background-color: $main-color-third;
+    border-bottom: 1px solid #0a294536;
+
+    > div:nth-of-type(1) {
+        > div:nth-of-type(1) {
+            > a:nth-of-type(1) {
+                margin-right: 5px;
+                &:visited {
+                    color: $main-color-third;
+                }
+
+                > i {
+                    color:  $main-color;
+                    font-size: 20px;
+                    cursor: pointer;
+                    transition-duration: 0.4s;
+                    margin-right: 10px;
+        
+                    &:hover {
+                        color: #2268a7;
+                    }
+                }
+            }
+        }
+        
+        > i {
+            color: $main-color;            
+
+            &:hover {
+                color: #2268a7;
+            }
+        }
+    }
+
+    > div:nth-of-type(2) {
+        background-color: $main-color-third;
+        margin-top: 5px;
+        border-top: 1px solid #0a294536;
+
+        > div:nth-of-type(1) {
+            > p {
+                color: #0A2945;
+            }
+
+            > ul {
+                border: 1px solid #B1BBC4
+            }
+        }
+
+        .headerLink {
+            color: $main-color;
+        }
+
+        > .headerSignUpLink {
+            background-color: #3898DE;
+            color: $main-color;
+    
+            &:hover {
+                background-color: #207dc1;
+            }
+    
+            &:visited {
+                color: $main-color;
+            }
+        }
+    }
+}
+
+.activeLink {
+    opacity: 1 !important;
+}
+
+@media(max-width: 1300px) {
+    .headerContainer {
+        > div:nth-of-type(2) {            
+            button {
+                width: 100px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 680px) {
+    .headerMenuContainer {
+        > div:nth-of-type(1) {  
+            align-items: center;
+            
+            > div:nth-of-type(1) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .headerMenuContainerWithAdditionalStyles {
+        > div:nth-of-type(1) {
+            align-items: flex-start;
+
+            > div:nth-of-type(1) {
+                > a:nth-of-type(1) {
+                    margin: 0 0 10px 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .headerMenuContainer {
+        padding: 12px 15px;
+    }
+}

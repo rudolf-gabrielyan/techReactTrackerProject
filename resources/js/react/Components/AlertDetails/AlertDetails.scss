@@ -1,0 +1,31 @@
+.alertDetails {
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+
+    > p:nth-of-type(1) {
+        font-weight: bold;
+        font-size: 1rem;
+        color: #FFFFFF;
+        padding: 32px 0 23px 14px;
+        margin: 0;
+        background-color: #7F878C;
+        border: 1px solid #5C5C5C;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+
+        > img {
+            width: 30px;
+            margin-right: 13px;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .alertDetails {
+        > p:nth-of-type(1) {
+            padding: 12px 0 12px 14px;
+        }
+    }
+}
